@@ -44,7 +44,7 @@ class _BottomNavLabState extends State<BottomNavLab> {
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
       ),
-      body: screens[currentIndex],
+      body: SafeArea(child: screens[currentIndex]),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         fixedColor: Colors.white,
