@@ -56,6 +56,7 @@ class BottomNavLab extends StatelessWidget {
         foregroundColor: Colors.white,
       ),
       body: _screens[currentIndex],
+      body: SafeArea(child: screens[currentIndex]),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         fixedColor: Colors.white,
